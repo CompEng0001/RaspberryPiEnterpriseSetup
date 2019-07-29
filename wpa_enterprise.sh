@@ -4,6 +4,7 @@
 # Version 2.1.0
 # This script has been developed for the UoG students to setup their pis for the enterprise network @ the University of Greenwich
 # To run this use bash /opt/Custom-Scripts/wpa_enterprise.sh
+# github https://github.com/CompEng0001/RaspberryPiEnterpriseSetup
 
 reset()
 {
