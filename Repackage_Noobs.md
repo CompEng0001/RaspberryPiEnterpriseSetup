@@ -132,6 +132,7 @@ All we have to do is edit the /etc/network/interfaces in the unpacked file syste
 `sudo nano ROOT/etc/network/interfaces`
 
 and change the file to read:
+
 ```
 auto lo
 iface lo inet loopback
@@ -144,6 +145,7 @@ wpa-psk "password"
 iface default inet dhcp
 wireless-power off
 ```
+
 Save the file and that's job done.
 
 Of course you can make any other changes to configuration files you want to.
@@ -170,6 +172,7 @@ tar -cvpf <label>.tar . --exclude=proc/*
         --exclude=sys/* --exclude=dev/pts/*
 ```
 The dot says pack everything in the current directory and the excludes say execpt for everything in proc and dev/pts.
+
 As we have already installed xz utilities in Step 1, all we have to do is:
 
 `sudo xz -9 -e root.tar`
@@ -207,6 +210,7 @@ This lists the size of the uncompressed file. For example:
 So in this case you need to enter:
 
 `"uncompressed_tarball_size": 1867`
+
 Now all that remains is to get the  modified NOOBS files onto an SD card. 
 
 If you are using a real Linux machine with card reader simply write the files in the usual way.
