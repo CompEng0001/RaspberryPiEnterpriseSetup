@@ -125,6 +125,7 @@ which creates root.tar in the same directory and then
 If you do things this way make sure to remember to delete the intermediate root.tar file. 
  
 ## 2. Change the files 
+
 This is the easy bit! 
 All we have to do is edit the /etc/network/interfaces in the unpacked file system. Assuming that you are using nano:
 
@@ -199,6 +200,7 @@ The simplest solution is to use:
 `sudo xz -l root.tar.xz`
 
 This lists the size of the uncompressed file. For example:
+
 `Strms Blocks Compressed Uncompressed Ratio`
 `1     1      525.8 MiB  1,867.0MiB   0.282 `
 
